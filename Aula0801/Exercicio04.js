@@ -9,7 +9,9 @@ function geradorSenha(){
     
 
     for (let i = 0; i < tamanhoSenha; i++) {
+
         const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+      
         senha += caracteres.charAt(indiceAleatorio);
       }
 
