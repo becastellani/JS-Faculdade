@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gerador de Senha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <h1>Gerador de Senha Aleatória</h1>
+        <label for="qtd">Digite quantos caracteres você deseja:</label>
+        <br>
+        <input id="qtd" type="number" placeholder="Digite a quantidade">
+        <button type="button" onclick="geradorSenha(event)">Gerar</button>
+        <br>
+        <div id="resultado"></div>
+        <br>
+        <button type="button" onclick="copiarSenha()">Copiar Senha</button>
+
+    </form>
+
+    <script src="Exercicio07.js"></script>
+</body>
+</html>
