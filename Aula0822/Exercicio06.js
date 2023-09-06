@@ -11,7 +11,7 @@ function calculoGeral() {
     if (document.getElementById("CelsiusParaFT").checked == true) {
         var fahrenheit = celsiusPara(numero);
         respostaElement.innerHTML = fahrenheit;
-        if (fahrenheit > 86) {  
+        if (fahrenheit >= 86) {  
             situacaoElement.innerHTML = "Está bem quente!";
         } else if (fahrenheit < 50) {  
             situacaoElement.innerHTML = "Está bem frio!";
@@ -21,7 +21,7 @@ function calculoGeral() {
     } else if (document.getElementById("FtParaCelsius").checked == true) {
         var celsius = farenPara(numero);
         respostaElement.innerHTML = celsius;
-        if (celsius > 30) {  
+        if (celsius >= 30) {  
             situacaoElement.innerHTML = "Está bem quente!";
         } else if (celsius < 10) {  
             situacaoElement.innerHTML = "Está bem frio!";
@@ -29,7 +29,6 @@ function calculoGeral() {
             situacaoElement.innerHTML = "A temperatura está confortavel!";
         }
     }
-
 
 
 
@@ -43,6 +42,5 @@ function calculoGeral() {
 
             return ( (x-32)*5/9 );
             }
-
-    
+   
 }
