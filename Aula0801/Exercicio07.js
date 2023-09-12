@@ -8,7 +8,6 @@ function CalcularImc(conta){
     const normal = 24.99
     const sobrepeso = 29.99
 
-
     if(conta < baixo){
         console.log("Abaixo do Peso")
         console.log(conta)
@@ -21,10 +20,7 @@ function CalcularImc(conta){
         console.log(conta)
 
     }
-
 }
-
-
 
 var perguntaPeso = parseFloat(prompt("Digite seu Peso"))
 var perguntaAltura = parseFloat(prompt("Digite sua Altura em m"))
